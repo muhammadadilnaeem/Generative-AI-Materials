@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        /* Add spacing for images */
+        .imageCont .col-md-4 {
+            margin-bottom: 20px; /* Space between rows of images */
+        }
+        .imageCont img {
+            border-radius: 5px; /* Optional: add rounded corners to images */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <span class="navbar-brand mb-0 h1">Image Generator</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="my-4">DALLE Image Generator</h1>
+
+        <form id="imageForm">
+            <div class="mb-3">
+                <label for="imgprompt" class="form-label">Enter your Prompt to generate Image</label>
+                <input id="imgprompt" type="text" class="form-control" required>
+            </div>
+            <button id="submitbtn" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <div class="container my-4">
+            <div id="loadingGif" class="d-none text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100" style="margin:auto;background:#fff">
+                    <g transform="rotate(0 50 50)">
+                        <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate>
+                        </rect>
+                    </g>
+                    <g transform="rotate(30 50 50)">
+                        <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate>
+                        </rect>
+                    </g>
+                    <!-- Repeat for other angles -->
+                </svg>
+            </div>
+            <div class="row imageCont"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("imageForm").addEventListener("submit", (e) => {
+            e.preventDefault(); // Prevent the default form submission
+            const loadingGif = document.getElementById("loadingGif");
+            const promptTxt = document.getElementById("imgprompt").value;
+            loadingGif.classList.remove("d-none"); // Show loading animation
+
+            fetch("/generateimages/" + encodeURIComponent(promptTxt))
+                .then(response => response.json())
+                .then(data => {
+                    loadingGif.classList.add("d-none"); // Hide loading animation
+                    const images = data.images; // Get images from response
+                    const container = document.querySelector(".imageCont");
+                    let totalHtml = "";
+
+                    images.forEach(image => {
+                        totalHtml += `
+                            <div class="col-md-4 my-2">
+                                <img width="340" src="${image}" class="img-responsive" alt="Generated Image">
+                            </div>`;
+                    });
+                    container.innerHTML = totalHtml; // Insert images into the container
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    loadingGif.classList.add("d-none"); // Hide loading on error
+                });
+        });
+    </script>
+</body>
+</html>
