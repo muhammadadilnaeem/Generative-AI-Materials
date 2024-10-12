@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Translation Using OpenAI Whisper⚡</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 70px;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #2c3e50;
+            background-color: aquamarine;
+        }
+        h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #34495e;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        input[type="file"],
+        input[type="text"],
+        input[type="submit"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        input[type="file"]:focus,
+        input[type="text"]:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+        @media (max-width: 600px) {
+            form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Welcome to Audio Translation Using OpenAI Whisper⚡</h1>
+    </div>
+
+
+
+    <h3>Upload an audio file 🚀</h3>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <input type="text" name="language" placeholder="Language" required>
+        <input type="submit" value="Upload">
+    </form>
+
+</body>
+</html>
