@@ -1,0 +1,8 @@
+1. Create OpenAI API Key.
+
+2. Set up Telegram bot.
+3. Go to Telegram and Search for Botfather
+4. Create new bot using command /newbot.
+5. Type name of bot. In this case I named demobot69.
+6. Then make a username for bot. In this case i named adildemo_bot.
+7. You wil get API token Use it in you .ev file.
