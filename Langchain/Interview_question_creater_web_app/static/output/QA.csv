@@ -1,0 +1,21 @@
+Question,Answer
+1. What projects did Muhammad Adil Naeem work on during his internship at CodeAlpha?,"During his internship at CodeAlpha, Muhammad Adil Naeem worked on the following projects:
+1. A credit scoring model to assess creditworthiness.
+2. An emotion recognition system from speech audio for customer service applications.
+3. A disease prediction model using medical data for early diagnosis."
+2. What is the purpose of the YouTube Video Sentiment and Summarization project?,"The purpose of the YouTube Video Sentiment and Summarization project is to leverage Google Gemini to generate accurate transcriptions and concise summaries of YouTube videos. This project aims to save users time by distilling video content into essential information, allowing users to access detailed insights without watching the entire video."
+3. What skills does Muhammad Adil Naeem possess in the field of machine learning?,"Muhammad Adil Naeem possesses the following skills in the field of machine learning:
+- Python Programming
+- Data Analysis With Python
+- Machine Learning (Classification and Regression)
+- Deep Learning (ANN, CNN, LSTM, GRU)
+- Natural Language Processing (NLP)
+- Generative AI (LLMS, Langcahin)
+- Streamlit Web App (Using OpenAI and Google Gemini and Groq APIs)"
+4. Where did Muhammad Adil Naeem receive his Bachelor of Computer Science degree?,Muhammad Adil Naeem received his Bachelor of Computer Science degree from the Virtual University of Pakistan.
+5. What certifications does Muhammad Adil Naeem hold in the field of machine learning?,"Muhammad Adil Naeem holds a Machine Learning Certification from IBM on Coursera, completed in July 2024."
+6. How does the Personalized Course Recommender app work?,The Personalized Course Recommender app works by allowing users to select courses they have audited or completed. The app then trains a recommendation model based on the user's course history and generates recommendations for new courses that the user might be interested in. This recommendation model likely uses machine learning algorithms to analyze the user's course preferences and suggest relevant courses based on patterns and similarities in course content or user behavior.
+7. What is Muhammad Adil Naeem passionate about in the field of technology?,Muhammad Adil Naeem is passionate about Artificial Intelligence and Machine Learning in the field of technology.
+8. How does Muhammad Adil Naeem describe his dedication to improving machine intelligence?,Muhammad Adil Naeem describes his dedication to improving machine intelligence as being passionate about Artificial Intelligence and Machine Learning. He is dedicated to exploring and understanding machine intelligence better in the industry.
+9. What is the goal of the disease prediction model project that Muhammad Adil Naeem worked on?,The goal of the disease prediction model project that Muhammad Adil Naeem worked on was to use medical data for early diagnosis.
+10. How does the app developed by Muhammad Adil Naeem help users access detailed insights from YouTube videos without watching the entire video?,"The app developed by Muhammad Adil Naeem leverages Google Gemini to generate accurate transcriptions and concise summaries of YouTube videos. By using this app, users can simply paste the YouTube video URL to access detailed insights without having to watch the entire video."
