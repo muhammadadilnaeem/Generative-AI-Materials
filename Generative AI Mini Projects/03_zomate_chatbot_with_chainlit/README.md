@@ -1,64 +1,53 @@
 
-------
-
-# **Welcome to Zomato Bot! 🚀🤖**
-
-Hi there, we're excited to share today's special menu with you!  
-Let us know what you'd like to order 🍽️👇
-
 ---
 
-## **🍕 Pizzas**
+# **Zomate Chatbot with Chainlit**
 
-- **Cheese Pizza** (12 inch) - *$9.99*
-- **Pepperoni Pizza** (12 inch) - *$10.99*
-- **Hawaiian Pizza** (12 inch) - *$11.99*
-- **Veggie Pizza** (12 inch) - *$10.99*
-- **Meat Lovers Pizza** (12 inch) - *$12.99*
-- **Margherita Pizza** (12 inch) - *$9.99*
+This project demonstrates the use of a chatbot, **Zomate Chatbot**, to provide food and restaurant recommendations using Chainlit, a framework for building interactive chatbot applications. The chatbot is designed to engage with users seeking personalized dining options and is powered by a generative AI language model, allowing for responsive and contextual interactions.
 
----
+## **Features**
 
-## **🍝 Pasta and Noodles**
+- **Restaurant Recommendations**: Suggests dining options based on cuisine preferences, location, budget, and other criteria.
+- **Menu Suggestions**: Recommends dishes or popular items from selected restaurants.
+- **Interactive Conversations**: Uses Chainlit to manage real-time, interactive conversations, enabling a seamless user experience.
+- **AI-Powered Responses**: The chatbot leverages natural language processing to provide relevant responses in conversational format.
 
-- **Spaghetti and Meatballs** - *$10.99*
-- **Lasagna** - *$11.99*
-- **Macaroni and Cheese** - *$8.99*
-- **Chicken and Broccoli Pasta** - *$10.99*
-- **Chow Mein** - *$9.99*
+## **Technologies Used**
 
----
+- **Chainlit**: A framework to build, run, and host conversational AI applications.
+- **LangChain**: Facilitates LLM-based interactions, enabling structured, context-aware conversations.
+- **OpenAI**: Provides the language model for generating responses based on user input.
+- **Python**: The primary programming language for this project.
 
-## **🍣 Asian Cuisine**
+## **Installation**
 
-- **Chicken Fried Rice** - *$8.99*
-- **Sushi Platter** (12 pcs) - *$14.99*
-- **Curry Chicken with Rice** - *$9.99*
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/muhammadadilnaeem/Generative-AI-Materials.git
+   cd Generative-AI-Materials/Generative\ AI\ Mini\ Projects/03_zomate_chatbot_with_chainlit
+   ```
 
----
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## **🍹 Beverages**
+3. **Set up API keys**:
+   - Obtain an API key from [OpenAI](https://openai.com/api/) and add it to your environment variables.
 
-- **Coke, Sprite, Fanta, or Diet Coke** (Can) - *$1.50*
-- **Water Bottle** - *$1.00*
-- **Juice Box** (Apple, Orange, or Cranberry) - *$1.50*
-- **Milkshake** (Chocolate, Vanilla, or Strawberry) - *$3.99*
-- **Smoothie** (Mango, Berry, or Banana) - *$4.99*
-- **Coffee** (Regular or Decaf) - *$2.00*
-- **Hot Tea** (Green, Black, or Herbal) - *$2.00*
+4. **Run the chatbot**:
+   ```bash
+   chainlit run main.py -w
+   ```
 
----
+## **Usage**
 
-## **🍛 Indian Cuisine**
+1. Run the chatbot as described in the installation section.
+2. Interact with the chatbot through the Chainlit interface. 
+3. Ask for restaurant recommendations or explore dining options based on your preferences.
 
-- **Butter Chicken with Naan Bread** - *$11.99*
-- **Chicken Tikka Masala with Rice** - *$10.99*
-- **Palak Paneer with Paratha** - *$9.99*
-- **Chana Masala with Poori** - *$8.99*
-- **Vegetable Biryani** - *$9.99*
-- **Samosa** (2 pcs) - *$4.99*
-- **Lassi** (Mango, Rose, or Salted) - *$3.99*
+## **Contact**
 
----
+For questions or feedback, please reach out via [GitHub Issues](https://github.com/muhammadadilnaeem/Generative-AI-Materials/issues).
 
-Enjoy your meal! 🍽️
+--- 
