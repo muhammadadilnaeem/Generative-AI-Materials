@@ -5,6 +5,12 @@
 
 This project demonstrates the use of a chatbot, **Zomate Chatbot**, to provide food and restaurant recommendations using Chainlit, a framework for building interactive chatbot applications. The chatbot is designed to engage with users seeking personalized dining options and is powered by a generative AI language model, allowing for responsive and contextual interactions.
 
+
+https://github.com/user-attachments/assets/ee84a759-5b8b-407a-b2b1-84ffa6f5a402
+
+
+
+
 ## **Features**
 
 - **Restaurant Recommendations**: Suggests dining options based on cuisine preferences, location, budget, and other criteria.
