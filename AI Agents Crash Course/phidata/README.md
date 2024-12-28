@@ -107,9 +107,9 @@
 
     - This will display Result in terminal which will look like this
       
-    ![alt text](../images/financial_agent_response_1.JPG)
+    ![alt text](./images/financial_agent_response_1.JPG)
 
-    ![alt text](../images/financial_agent_response_2.JPG)
+    ![alt text](./images/financial_agent_response_2.JPG)
 
 5. As this result looks quite rough, we want our output to be displayed in a proper playground, for this we will create another file `financial_agent_playground.py`, that will display results in Phidata Playground. We will write this code in this file.
 
@@ -185,7 +185,15 @@
 
 
     - Your terminal will look like this
-        ![alt text](../images/financail_agent_3.JPG) 
+        ![alt text](./images/financail_agent_3.JPG) 
 
-    - Now in order to access the application You need to go to https://www.phidata.app/playground/chat and `SELECT AN ENDPOPINT` and add an endpoint:
-    ![alt text](../images/financial_agent_playground.png)
+    - Now in order to access the application You need to go to https://www.phidata.app/playground/chat and `SELECT AN ENDPOPINT` if localhost:7777 is selected by default it's okay, othervise select it:
+    ![alt text](./images/financail_agent_4.JPG)
+
+    - This is how communication in Playground will look like:
+  
+        ![alt text](./images/financial_agent_playground_5.png)
+
+That's it Enjoy Your Financial Agent.
+
+-----------
